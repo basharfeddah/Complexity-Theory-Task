@@ -60,19 +60,19 @@ def main():
     start_time = time.time()
     scc = strongly_connected_components(nx_graph)
     end_time = time.time()
-    print(f"Step 1: Strongly connected components found in {end_time - start_time:.6f} seconds.")
+    print(f"Strongly connected components found in {end_time - start_time:.6f} seconds.")
 #رند احمد شعبان
     # Step 2: Check if the undirected graph is 2-connected
     start_time = time.time()
     is_2_conn = is_2_connected(nx_graph)
     end_time = time.time()
-    print(f"Step 2: Undirected graph is 2-connected: {is_2_conn} (checked in {end_time - start_time:.6f} seconds).")
+    print(f"Undirected graph is 2-connected: {is_2_conn} (checked in {end_time - start_time:.6f} seconds).")
 #رغد كارم محمد
     # Step 3: Check if the graph is 2-vertex strongly biconnected
     start_time = time.time()
     is_2_vsb = is_2_vertex_strongly_biconnected(nx_graph)
     end_time = time.time()
-    print(f"Step 3: Directed graph is 2-vertex strongly biconnected: {is_2_vsb} (checked in {end_time - start_time:.6f} seconds).")
+    print(f"Directed graph is 2-vertex strongly biconnected: {is_2_vsb} (checked in {end_time - start_time:.6f} seconds).")
 
 if __name__ == "__main__":
     main()
